@@ -24,8 +24,7 @@ background(color(0,255-c,c));
 c++;
 
 if(c>=255){c=0;}
- fill(50);
- rect((windowWidth/2)+x,(windowHeight/2)+y, 55, 55);
+ 
 ship.render
   if (keyIsDown(LEFT_ARROW)) {
     x -= 5;
@@ -42,7 +41,9 @@ ship.render
   if (keyIsDown(DOWN_ARROW)) {
     y += 5;
   }
-
+ clear();
+fill(50);
+ rect(x,(2)+y, 55, 55);
 }
 
 
