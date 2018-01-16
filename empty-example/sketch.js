@@ -24,8 +24,25 @@ c++;
 
 if(c>=255){c=0;}
  fill(50);
- rect(windowWidth/2,windowHeight/2, 55, 55);
-ship.render}
+ rect((windowWidth/2)+x,(windowHeight/2)+y, 55, 55);
+ship.render
+  if (keyIsDown(LEFT_ARROW)) {
+    x -= 5;
+  }
+
+  if (keyIsDown(RIGHT_ARROW)) {
+    x += 5;
+  }
+
+  if (keyIsDown(UP_ARROW)) {
+    y -= 5;
+  }
+
+  if (keyIsDown(DOWN_ARROW)) {
+    y += 5;
+  }
+
+}
 
 
 
