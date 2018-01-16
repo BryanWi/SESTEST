@@ -1,6 +1,7 @@
 var ship;
 
 var c= 0;
+var x=0, y=0;
 
 function setup() {
  
