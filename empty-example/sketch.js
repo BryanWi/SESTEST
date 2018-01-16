@@ -1,11 +1,34 @@
-var x = 100;
-var y = 100;
+
+
+var ship;
+
+var c= 0;
+var x=0;
+var y=0;
 
 function setup() {
-  createCanvas(512, 512);
+ 
+
+createCanvas(windowWidth, windowHeight);
+  
+ship= new Ship();
+
+
 }
 
+
+
+
+
+
 function draw() {
+ 
+background(color(0,255-c,c));
+c++;
+
+if(c>=255){c=0;}
+ 
+//ship.render
   if (keyIsDown(LEFT_ARROW)) {
     x -= 5;
   }
@@ -21,8 +44,25 @@ function draw() {
   if (keyIsDown(DOWN_ARROW)) {
     y += 5;
   }
-
-  clear();
-  fill(255, 0, 0);
-  ellipse(x, y, 50, 50);
+ clear();
+ fill(50);
+ rect(x,(2)+y, 55, 55);
 }
+
+
+
+/*
+function Ship(){
+  this.r=100;
+  
+
+this.render= function(){
+
+   
+fill(color(0,100,100));
+    triangle(-this.r, this.r, this.r, this.r, 0, -this.r);
+  }
+
+
+}
+*/
