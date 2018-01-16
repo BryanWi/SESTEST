@@ -1,7 +1,8 @@
 var ship;
 
 var c= 0;
-var x=0, y=0;
+var x=0;
+var y=0;
 
 function setup() {
  
@@ -25,7 +26,7 @@ c++;
 
 if(c>=255){c=0;}
  
-ship.render
+//ship.render
   if (keyIsDown(LEFT_ARROW)) {
     x -= 5;
   }
@@ -48,7 +49,7 @@ fill(50);
 
 
 
-
+/*
 function Ship(){
   this.r=100;
   
@@ -62,3 +63,4 @@ fill(color(0,100,100));
 
 
 }
+*/
