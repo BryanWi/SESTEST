@@ -1,6 +1,5 @@
 var ship;
 
-
 var c= 0;
 
 function setup() {
@@ -24,6 +23,9 @@ background(color(0,255-c,c));
 c++;
 
 if(c>=255){c=0;}
+ translate (windowWidth/2,windowHeight/2);
+ fill(50);
+ rect(30, 20, 55, 55);
 ship.render}
 
 
